@@ -242,6 +242,7 @@ netfilter-persistent reload
 # download script
 cd /usr/bin
 wget -O add-host "https://raw.githubusercontent.com/Exe303/OppoA53/main/add-host.sh"
+wget -O about "https://raw.githubusercontent.com/Exe303/OppoA53/main/about.sh"
 wget -O menu "https://raw.githubusercontent.com/Exe303/OppoA53/main/menu.sh"
 wget -O usernew "https://raw.githubusercontent.com/Exe303/OppoA53/main/usernew.sh"
 wget -O trial "https://raw.githubusercontent.com/Exe303/OppoA53/main/trial.sh"
@@ -261,14 +262,31 @@ wget -O clear-log "https://raw.githubusercontent.com/Exe303/OppoA53/main/clear-l
 wget -O change-port "https://raw.githubusercontent.com/Exe303/OppoA53/main/change.sh"
 wget -O port-ovpn "https://raw.githubusercontent.com/Exe303/OppoA53/main/port-ovpn.sh"
 wget -O port-ssl "https://raw.githubusercontent.com/Exe303/OppoA53/main/port-ssl.sh"
+wget -O port-wg "https://raw.githubusercontent.com/Exe303/OppoA53/main/port-wg.sh"
+wget -O port-tr "https://raw.githubusercontent.com/Exe303/OppoA53/main/port-tr.sh"
+wget -O port-sstp "https://raw.githubusercontent.com/Exe303/OppoA53/main/port-sstp.sh"
+wget -O port-squid "https://raw.githubusercontent.com/Exe303/OppoA53/main/port-squid.sh"
+wget -O port-ws "https://raw.githubusercontent.com/Exe303/OppoA53/main/port-ws.sh"
+wget -O port-vless "https://raw.githubusercontent.com/Exe303/OppoA53/main/port-vless.sh"
 wget -O wbmn "https://raw.githubusercontent.com/Exe303/OppoA53/main/webmin.sh"
 wget -O xp "https://raw.githubusercontent.com/Exe303/OppoA53/main/xp.sh"
+wget -O kernel-updt "https://raw.githubusercontent.com/Exe303/OppoA53/main/kernel-update.sh"
 wget -O tessh "https://raw.githubusercontent.com/Exe303/OppoA53/main/tessh.sh"
+wget -O ssstp "https://raw.githubusercontent.com/Exe303/OppoA53/main/ssstp.sh"
+wget -O sssr "https://raw.githubusercontent.com/Exe303/OppoA53/main/sssr.sh"
+wget -O ltp "https://raw.githubusercontent.com/Exe303/OppoA53/main/ltp.sh"
+wget -O wgg "https://raw.githubusercontent.com/Exe303/OppoA53/main/wgg.sh"
+wget -O trj "https://raw.githubusercontent.com/Exe303/OppoA53/main/trj.sh"
+wget -O wss "https://raw.githubusercontent.com/Exe303/OppoA53/main/wss.sh"
+wget -O vls "https://raw.githubusercontent.com/Exe303/OppoA53/main/vls.sh"
+wget -O updatee "https://raw.githubusercontent.com/Exe303/OppoA53/main/updatee.sh"
 wget -O auto-reboot "https://raw.githubusercontent.com/Exe303/OppoA53/main/auto-reboot.sh"
 wget -O tr-mnt "https://raw.githubusercontent.com/Exe303/OppoA53/main/tr-mnt.sh"
 wget -O bbr "https://raw.githubusercontent.com/Exe303/OppoA53/main/bbr.sh"
 wget -O running "https://raw.githubusercontent.com/Exe303/OppoA53/main/running.sh"
-
+wget -O cff "https://raw.githubusercontent.com/Exe303/OppoA53/main/cff.sh"
+wget -O cfh "https://raw.githubusercontent.com/Exe303/OppoA53/main/cfh.sh"
+wget -O cfd "https://raw.githubusercontent.com/Exe303/OppoA53/main/cfd.sh"
 chmod +x add-host
 chmod +x menu
 chmod +x usernew
@@ -279,6 +297,8 @@ chmod +x delete
 chmod +x cek
 chmod +x restart
 chmod +x speedtest
+chmod +x info
+chmod +x about
 chmod +x autokill
 chmod +x tendang
 chmod +x ceklim
@@ -288,13 +308,31 @@ chmod +x clear-log
 chmod +x change-port
 chmod +x port-ovpn
 chmod +x port-ssl
+chmod +x port-wg
+chmod +x port-sstp
+chmod +x port-tr
+chmod +x port-squid
+chmod +x port-ws
+chmod +x port-vless
 chmod +x wbmn
 chmod +x xp
+chmod +x kernel-updt
 chmod +x tessh
+chmod +x ssstp
+chmod +x sssr
+chmod +x ltp
+chmod +x wgg
+chmod +x trj
+chmod +x wss
+chmod +x vls
+chmod +x updatee
 chmod +x auto-reboot
 chmod +x tr-mnt
 chmod +x bbr
 chmod +x running
+chmod +x cff
+chmod +x cfh
+chmod +x cfd
 echo "0 0 * * * root clear-log && reboot" >> /etc/crontab
 echo "0 0 * * * root xp" >> /etc/crontab
 # remove unnecessary files

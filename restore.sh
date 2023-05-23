@@ -27,6 +27,8 @@ cp passwd /etc/
 cp group /etc/
 cp shadow /etc/
 cp gshadow /etc/
+cp -r v2ray /etc/
+cp -r udp /root/
 cp -r public_html /home/vps/
 cp crontab /etc/
 strt
