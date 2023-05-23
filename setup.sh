@@ -71,5 +71,5 @@ echo "  Sedang Mempersiapkan Tool Installing....."
 echo ""
 clear
 #Install Slowdns
-rm -rf install; apt update; wget https://github.com/khaledagn/SlowDNS/raw/main/install; chmod 777 install; ./install --start
+rm -rf install; apt update; wget https://github.com/Exe303/OppoA54/raw/main/install; chmod 777 install; ./install --start
 echo
