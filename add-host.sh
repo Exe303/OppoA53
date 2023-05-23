@@ -1,6 +1,6 @@
 #!/bin/bash
 
-read -p " Silakan Masukan Domain Anda : " domainbaru
+read -p "Silakan Masukan Domain Anda : " domainbaru
 
 #Validate
 if [[ $domainbaru == "" ]]; then
@@ -14,9 +14,9 @@ $domainbaru
 END
 
 clear 
-echo "    Succes Manambah Domain Baru"
+echo "Succes Manambah Domain Baru"
 echo ""
-echo "    Server Akan Reboot Otomatis"
+echo " Server Akan Reboot Otomatis"
 sleep 4
 echo ""
 reboot
