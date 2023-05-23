@@ -54,8 +54,8 @@ echo -e ""
 echo -e "==============================="
 echo -e "         𝗦𝗟𝗢𝗪𝗗𝗡𝗦 𝗦𝗘𝗥𝗩𝗘𝗥            "
 echo -e "==============================="
-echo -e "Name Server :" ${NS}
-echo -e "Public Key  :" ${PUB}
+echo -e "Name Server : ${NS}"
+echo -e "Public Key  : ${PUB}"
 echo -e ""
 echo -e "==============================="
 echo -e "Created     : $created"
