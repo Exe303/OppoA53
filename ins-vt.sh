@@ -14,15 +14,18 @@ chronyc sourcestats -v
 chronyc tracking -v
 date
 mkdir -p /etc/v2ray
-read -p "Masukan Domain Anda :  " domain
+read -p "        Masukan Domain Anda :  " domain
 if [[ ${domain} ]]; then
 echo $domain >/etc/v2ray/domain
 else
-echo -e " Please input your Domain"
+echo -e "        Please input your Domain"
 echo -e ""
-echo -e " Start again in 5 seconds"
+echo -e "        Start again in 5 seconds"
 echo -e ""
 sleep 5
+
+exit 1
+fi
 echo ""
 systemctl stop nginx
 mkdir /root/.acme.sh
