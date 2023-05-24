@@ -57,7 +57,7 @@ echo -e " 4.  Control Panel Vless"
 
 echo -e " 5.  Control Panel Trojan"
 
-echo -e " 6.  Control Panel UDP"
+echo -e " 6.  Control Panel Slowdns"
 
 echo -e ""
 
@@ -121,7 +121,7 @@ trj
 
 6)
 
-tessh
+slowdns
 
 ;;
 
