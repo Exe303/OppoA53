@@ -1,10 +1,17 @@
 #!/bin/bash
-# Script By Mardhex
-# Getting
-MYIP=$(wget -qO- ipinfo.io/ip);
-clear
-read -rp "Silakan Masukan Domain Anda : " -e domain
-echo "IP=$domain" >>/var/lib/premium-script/ipvps.conf
-rm -rf /etc/v2ray/domain
-echo $domain > /etc/v2ray/domain
-certv2ray
+
+read -p "  Silakan Masukan Domain Anda : " domainbaru
+
+#Validate
+if [[ $domainbaru == "" ]]; then
+echo "Masukan Ulang Domain Baru Anda"
+exit 1
+fi
+
+#Input To Domain
+cat > /etc/v2ray/domain << END
+$domainbaru
+END
+
+clear 
+echo "   Berhasil Menambah Domain Baru"
