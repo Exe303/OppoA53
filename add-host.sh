@@ -1,22 +1,11 @@
 #!/bin/bash
-
-read -p "Silakan Masukan Domain Anda : " domainbaru
-
-#Validate
-if [[ $domainbaru == "" ]]; then
-echo "Please Input New Domain"
-exit 1
-fi
-
-#Input To Domain
-cat > /etc/v2ray/domain << END
-$domainbaru
-END
-
-clear 
-echo "Succes Manambah Domain Baru"
-echo ""
-echo " Server Akan Reboot Otomatis"
-sleep 4
-echo ""
-reboot
+# Script By Mardhex
+# Getting
+MYIP=$(wget -qO- ipinfo.io/ip);
+IZIN=$( curl ipinfo.io/ip | grep $MYIP )
+clear
+read -rp "Silakan Masukan Domain Anda : " -e domain
+echo "IP=$domain" >>/var/lib/premium-script/ipvps.conf
+rm -rf /etc/v2ray/domain
+echo $domain > /etc/v2ray/domain
+certv2ray
