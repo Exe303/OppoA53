@@ -66,7 +66,7 @@ echo "   - Stunnel4                : 222, 777"  | tee -a log-install.txt
 echo "   - Dropbear                : 109, 143"  | tee -a log-install.txt
 echo "   - Badvpn                  : 7100, 7200, 7300"  | tee -a log-install.txt
 echo "   - Nginx                   : 81"  | tee -a log-install.txt
-echo "   - V2RAY Vmess TLS         : 8443"  | tee -a log-install.txt
+echo "   - V2RAY Vmess TLS         : 443"  | tee -a log-install.txt
 echo "   - V2RAY Vmess None TLS    : 80"  | tee -a log-install.txt
 echo "   - V2RAY Vless TLS         : 2083"  | tee -a log-install.txt
 echo "   - V2RAY Vless None TLS    : 8880"  | tee -a log-install.txt
@@ -83,18 +83,7 @@ echo "   - Whatsapp                : *"  | tee -a log-install.txt
 echo "   - Facebook                : *"  | tee -a log-install.txt
 echo "------------------A̳U̳T̳O̳ ̳S̳C̳R̳I̳P̳T̳ ̳B̳Y̳ ̳M̳D̳X̳T̳U̳N̳N̳E̳L̳-----------------" | tee -a log-install.txt
 echo ""
-echo "===========>>>> Proses Installing Slowdns..!!!"
-sleep 5
-clear
-echo "===========>>>> Please Wait.........!!!"
-sleep 4
-clear
-echo "===========>>>> Cecking Toll Slowdns.........!!!"
-sleep 3
-clear
-echo "===========>>>> Installing Ready.........!!!"
-sleep 2
-clear
-sleep 1
-cd
-rm -rf install; apt update; wget https://github.com/Exe303/OppoA54/raw/main/install; chmod 777 install; ./install --start
+echo ""
+sleep 10
+rm -rf setup
+reboot
