@@ -150,10 +150,10 @@ rm -f /root/vnstat-2.6.tar.gz
 rm -rf /root/vnstat-2.6
 
 #install sslh
-apt install sslh -y
-cd /etc/default/
-rm sslh
-wget https://raw.githubusercontent.com/Exe303/OppoA53/main/sslh
+#apt install sslh -y
+#cd /etc/default/
+#rm sslh
+#wget https://raw.githubusercontent.com/Exe303/OppoA53/main/sslh
 
 # install stunnel
 apt install stunnel4 -y
@@ -164,9 +164,9 @@ socket = a:SO_REUSEADDR=1
 socket = l:TCP_NODELAY=1
 socket = r:TCP_NODELAY=1
 
-[sshovpn]
-accept = 443
-connect = 127.0.0.1:447
+[drobear]
+accept = 442
+connect = 127.0.0.1:222
 
 [openvpn]
 accept = 1196
@@ -217,10 +217,8 @@ echo; echo 'Installation has completed.'
 echo 'Config file is at /usr/local/ddos/ddos.conf'
 echo 'Please send in your comments and/or suggestions to zaf@vsnl.com'
 
-# banner /etc/gtea
-wget -O /etc/gtea "https://raw.githubusercontent.com/Exe303/OppoA53/main/bannerssh.conf"
-echo "Banner /etc/gtea" >>/etc/ssh/sshd_config
-sed -i 's@DROPBEAR_BANNER=""@DROPBEAR_BANNER="/etc/gtea"@g' /etc/default/dropbear
+# banner /etc/mdx.txt
+wget -O /etc/mdx.txt "https://raw.githubusercontent.com/Exe303/OppoA53/main/banner"
 
 # blockir torrent
 iptables -A FORWARD -m string --string "get_peers" --algo bm -j DROP
@@ -364,7 +362,6 @@ screen -dmS badvpn badvpn-udpgw --listen-addr 127.0.0.1:7600 --max-clients 500
 screen -dmS badvpn badvpn-udpgw --listen-addr 127.0.0.1:7700 --max-clients 500
 screen -dmS badvpn badvpn-udpgw --listen-addr 127.0.0.1:7800 --max-clients 500
 screen -dmS badvpn badvpn-udpgw --listen-addr 127.0.0.1:7900 --max-clients 500
-screen -dmS proxy ./usr/bin/ws-ssh -l 8080 -r 127.0.0.1:447
 history -c
 echo "unset HISTFILE" >> /etc/profile
 
