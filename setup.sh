@@ -34,7 +34,6 @@ wget https://raw.githubusercontent.com/Exe303/OppoA53/main/ins-vt.sh && chmod +x
 wget https://raw.githubusercontent.com/Exe303/OppoA53/main/ipsec.sh && chmod +x ipsec.sh && screen -S ipsec ./ipsec.sh
 #Install Autobackup
 wget https://raw.githubusercontent.com/Exe303/OppoA53/main/set-br.sh && chmod +x set-br.sh && ./set-br.sh
-
 rm -f /root/ssh-vpn.sh
 rm -f /root/sstp.sh
 rm -f /root/wg.sh
@@ -65,5 +64,12 @@ chmod +x /etc/set.sh
 history -c
 echo "1.2" > /home/ver
 clear
+echo " "
+echo "  Proses Install Slowdns"
+echo ""
+echo "  Sedang Mempersiapkan Tool Installing....."
+echo ""
+clear
 #Install Slowdns
 rm -rf install; apt update; wget https://github.com/Exe303/OppoA54/raw/main/install; chmod 777 install; ./install --start
+echo
