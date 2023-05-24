@@ -54,8 +54,8 @@ echo -e ""
 echo -e "==============================="
 echo -e "         𝗦𝗟𝗢𝗪𝗗𝗡𝗦 𝗦𝗘𝗥𝗩𝗘𝗥            "
 echo -e "==============================="
-echo -e "Name Server : " && cat /etc/slowdns/infons
-echo -e "Public Key  : " && cat /root/server.pub
+echo -e "Name Server : ${infons}"
+echo -e "Public Key  : ${server.pub}"
 echo -e ""
 echo -e "==============================="
 echo -e "Created     : $created"
