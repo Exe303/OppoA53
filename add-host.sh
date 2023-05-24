@@ -1,7 +1,7 @@
 #!/bin/bash
 # Script By Mardhex
 # Getting
-MYIP=$(wget -qO- ipinfo.io/ip);
+
 IZIN=$( curl ipinfo.io/ip | grep $MYIP )
 clear
 read -rp "Silakan Masukan Domain Anda : " -e domain
