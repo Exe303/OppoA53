@@ -33,7 +33,7 @@ cp /etc/group backup/
 cp /etc/shadow backup/
 cp /etc/gshadow backup/
 cp -r /etc/v2ray backup/v2ray
-cp -r /root/udp backup/udp
+cp -r /etc/slowdns backup/slowdns
 cp -r /home/vps/public_html backup/public_html
 cd /root
 zip -r $IP-$date.zip backup > /dev/null 2>&1
