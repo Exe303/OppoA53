@@ -15,6 +15,10 @@ read -p "Password : " Pass
 read -p "Expired (hari): " masaaktif
 
 IP=$(wget -qO- icanhazip.com);
+ssl="$(cat ~/log-install.txt | grep -w "Stunnel4" | cut -d: -f2)"
+sqd="$(cat ~/log-install.txt | grep -w "Squid" | cut -d: -f2)"
+ovpn="$(netstat -nlpt | grep -i openvpn | grep -i 0.0.0.0 | awk '{print $4}' | cut -d: -f2)"
+ovpn2="$(netstat -nlpu | grep -i openvpn | grep -i 0.0.0.0 | awk '{print $4}' | cut -d: -f2)"
 sleep 1
 echo Ping Host
 echo Cek Hak Akses...
@@ -50,12 +54,13 @@ echo -e "Ws None TLS : 80"
 echo -e "Ws TLS      : 443"
 echo -e "SSL/TLS     : 222, 777, 443"
 echo -e "BadVpn      : 7100-7300"
+echo -e "Slowdns Port  : 22, 143, 8080"
 echo -e ""
 echo -e "==============================="
 echo -e "         𝗦𝗟𝗢𝗪𝗗𝗡𝗦 𝗦𝗘𝗥𝗩𝗘𝗥            "
 echo -e "==============================="
-echo -e "Name Server : " && cat /etc/slowdns/infons
-echo -e "Public Key  : " && cat /root/server.pub
+echo -e "Name Server :" && cat /etc/slowdns/infons
+echo -e "Public Key  :" && cat /root/server.pub
 echo -e ""
 echo -e "==============================="
 echo -e "Created     : $created"
