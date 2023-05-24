@@ -84,7 +84,7 @@ echo "   - V2RAY Vmess None TLS    : 80"  | tee -a log-install.txt
 echo "   - V2RAY Vless TLS         : 2083"  | tee -a log-install.txt
 echo "   - V2RAY Vless None TLS    : 8880"  | tee -a log-install.txt
 echo "   - Trojan                  : 2087"  | tee -a log-install.txt
-echo "   - SlowDns Port         : 22, 143, 109"  | tee -a log-install.txt
+echo "   - SlowDns Port            : 22, 143, 109"  | tee -a log-install.txt
 echo ""  | tee -a log-install.txt
 echo "   - White Label" | tee -a log-install.txt
 echo "   - Installation Log --> /root/log-install.txt"  | tee -a log-install.txt
