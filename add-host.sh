@@ -1,8 +1,7 @@
 #!/bin/bash
 # Script By Mardhex
 # Getting
-
-IZIN=$( curl ipinfo.io/ip | grep $MYIP )
+MYIP=$(wget -qO- ipinfo.io/ip);
 clear
 read -rp "Silakan Masukan Domain Anda : " -e domain
 echo "IP=$domain" >>/var/lib/premium-script/ipvps.conf
