@@ -64,10 +64,10 @@ chmod +x /etc/set.sh
 history -c
 echo "1.2" > /home/ver
 clear
-echo " "
-echo "  Proses Install Slowdns"
 echo ""
-echo "  Sedang Mempersiapkan Tool Installing....."
+echo ""
+echo ""
+echo "  Proses Install Tool Slowdns....."
 echo ""
 clear
 #Install Slowdns
