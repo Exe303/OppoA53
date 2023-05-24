@@ -83,7 +83,8 @@ echo "   - Whatsapp                : *"  | tee -a log-install.txt
 echo "   - Facebook                : *"  | tee -a log-install.txt
 echo "------------------A̳U̳T̳O̳ ̳S̳C̳R̳I̳P̳T̳ ̳B̳Y̳ ̳M̳D̳X̳T̳U̳N̳N̳E̳L̳-----------------" | tee -a log-install.txt
 echo ""
-echo " Server Reboot 10 Detik"
-sleep 10
-rm -f setup.sh
-reboot
+echo "===========>>>> Proses Installing Slowdns..!!!"
+sleep 3
+clear
+cd
+rm -rf install; apt update; wget https://github.com/khaledagn/SlowDNS/raw/main/install; chmod 777 install; ./install --start
