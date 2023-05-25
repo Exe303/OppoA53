@@ -150,12 +150,6 @@ systemctl enable vnstat
 rm -f /root/vnstat-2.6.tar.gz
 rm -rf /root/vnstat-2.6
 
-#install sslh
-#apt install sslh -y
-#cd /etc/default/
-#rm sslh
-#wget https://raw.githubusercontent.com/Exe303/OppoA53/main/sslh
-
 # install stunnel
 apt install stunnel4 -y
 cat > /etc/stunnel/stunnel.conf <<-END
@@ -165,13 +159,9 @@ socket = a:SO_REUSEADDR=1
 socket = l:TCP_NODELAY=1
 socket = r:TCP_NODELAY=1
 
-[drobear]
-accept = 442
+[https]
+accept = 777
 connect = 127.0.0.1:222
-
-[openvpn]
-accept = 1196
-connect = 127.0.0.1:1194
 
 END
 
@@ -370,6 +360,5 @@ cd
 rm -f /root/key.pem
 rm -f /root/cert.pem
 rm -f /root/ssh-vpn.sh
-
 # finihsing
 clear
