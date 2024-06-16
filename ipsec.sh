@@ -3,7 +3,7 @@
 # Ubuntu 18.04 & 20.04 bit
 # Centos 7 & 8 64bit 
 # By Mardhex
-VPN_IPSEC_PSK='acelltunnel'
+VPN_IPSEC_PSK='mifacell'
 NET_IFACE=$(ip -o $NET_IFACE -4 route show to default | awk '{print $5}');
 export PATH="/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"
 source /etc/os-release
