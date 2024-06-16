@@ -45,7 +45,7 @@ cat <<EOF
 L2TP/IPSEC PSK VPN
 
 Server IP    : $PUBLIC_IP
-IPsec PSK    : acelltunel
+IPsec PSK    : mifacell
 Username     : $VPN_USER
 Password     : $VPN_PASSWORD
 Expired ON   : $exp
